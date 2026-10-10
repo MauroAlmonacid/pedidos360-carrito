@@ -5,10 +5,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/carrito")
-// Permite la comunicación directa con tu frontend en Angular:
-@CrossOrigin(origins = "http://localhost:4200")
 public class CarritoController {
 
     // Lista temporal en memoria para almacenar los pedidos del carrito
